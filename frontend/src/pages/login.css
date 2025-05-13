@@ -1,0 +1,14 @@
+.auth-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+.auth-container > *{
+    width: 25wh;
+    max-width: 500px;
+}
+.auth-container > button{
+    width: 100px;
+}

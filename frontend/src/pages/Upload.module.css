@@ -1,0 +1,65 @@
+.card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #e9ecef;           /* светло-серый фон, как на скрине */
+    border-radius: 12px;
+    padding: 24px 32px;
+  }
+  
+  .label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-width: 120px;
+  }
+  
+  /* стилизуем сам инпут */
+  .inputFile::-webkit-file-upload-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #4a69ff;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .inputFile::-moz-file-upload-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #4a69ff;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .button:hover {
+    background: #0064d6;
+  }
+  
+  /* сообщения */
+  .msgSuccess {
+    margin-left: auto;
+    font-weight: 600;
+    color: #28a745;
+  }
+  
+  .msgError {
+    margin-left: auto;
+    font-weight: 600;
+    color: #dc3545;
+  }
+  
