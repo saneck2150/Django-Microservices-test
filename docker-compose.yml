@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  django:
+    build: ./backend
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes: [./backend:/app]
+    env_file: .env
+    depends_on: [file-processor]
+    ports: ["8000:8000"]
+
+  file-processor:
+    build: ./services/file_processor
+    ports: ["8001:8001"]
+
+  frontend:
+    build: ./frontend
+    ports: ["3000:80"]
